@@ -7,12 +7,12 @@ const userActivityController = async (args) => {
   const [ userName ] = args;
 
   if (!hasValidLength(args, 1)) {
-    console.log('You should pass one argument and it must be the GitHub user name');
+    console.log('You should pass one argument and it must be the GitHub user name.');
     return;
   }
   
   if (isNumeric(userName)) {
-    console.log('GitHub user name should be a string');
+    console.log('GitHub user name should be a string.');
     return;
   }
   
